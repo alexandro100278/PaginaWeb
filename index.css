@@ -1,81 +1,92 @@
-*{
+* {
     box-sizing: border_box;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     min-height: 100%;
 }
 
-.grid-container > *{
+.grid-container>* {
     box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
     text-align: center;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     gap: 10px;
     /*definir las areas*/
-    grid-template-areas: 
-    "header"
-    "navbar"
-    "main"
-    "aside"
-    "footer";
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "aside"
+        "footer";
 }
 
-.header{
-    grid-area:header;
-    background-color: aquamarine;
+.header {
+    grid-area: header;
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar{
+.navbar {
     grid-area: navbar;
     background-color: bisque;
 }
 
-.main{
+.main {
     grid-area: main;
     background-color: cadetblue;
 }
 
-.aside{
+.aside {
     grid-area: aside;
     background-color: chartreuse;
 }
 
-.footer{
+.footer {
     grid-area: footer;
     background-color: coral;
 }
 
 
-@media (min-width:600px){
+@media (min-width:600px) {
 
-    .grid-container{
-    grid-template: 
-    " . header" 100px
-    "navbar navbar" 50px 
-    "aside main" auto 
-    "footer footer" 50px / 
-    300px auto;
+    .grid-container {
+        grid-template:
+            " . header" 100px
+            "navbar navbar" 50px "aside main" auto "footer footer" 50px / 300px auto;
     }
 }
 
-@media (min-width:1024px){
-    .grid-container{
-    grid-template: 
-    "header header header" 100px
-    "aside main navbar" auto 
-    "footer footer footer" 50px / 
-    300px auto;
+@media (min-width:1024px) {
+    .grid-container {
+        grid-template:
+            "header header header" 100px
+            "aside main navbar" auto "footer footer footer" 50px / 300px auto;
     }
+}
+
+button {
+    background-color: rgb(226, 231, 234);
+    color: black;
+    padding: 10px 20px;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+button:hover {
+  background-color: #2b9dda;
 }
