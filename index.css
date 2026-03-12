@@ -90,3 +90,14 @@ button {
 button:hover {
   background-color: #2b9dda;
 }
+
+.redes{
+margin:10px;
+}
+
+.redes a{
+margin:0 10px;
+text-decoration:none;
+color:black;
+}
+
