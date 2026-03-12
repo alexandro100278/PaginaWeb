@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body class="grid-container">
+
+    <header class="header">
+        <div>Logo</div>
+        <h2>Electronic Components Store</h2>
+        <ul>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="#"><button>Acerca de</button></a>
+            <a href="#"><button>Contacto</button></a>
+            <a href="tienda.html"><button>Tienda</button></a>
+        </ul>
+    </header>
+
+    <main class="main">
+
+        <div class="filtros">
+            <button class="filtro activo" data-filtro="todos">Mostrar todos</button>
+            <button class="filtro" data-filtro="celulares">Celulares</button>
+            <button class="filtro" data-filtro="laptops">Laptops</button>
+            <button class="filtro" data-filtro="accesorios">Accesorios</button>
+        </div>
+
+        <div class="contenedor-productos">
+            <div class="card" data-categoria="accesorios">
+                <img src="img/esp32.jpg">
+                <h3>ESP32 IoT Board</h3>
+                <p>WiFi & Bluetooth microcontroller.</p>
+                <span class="precio">$12 USD</span>
+                <button class="button_card">Buy now</button>
+            </div>
+
+            <div class="card" data-categoria="accesorios">
+                <img src="img/sensor.jpg">
+                <h3>Sensor Kit</h3>
+                <p>Perfect for Arduino projects.</p>
+                <span class="precio">$20 USD</span>
+                <button class="button_card">Buy now</button>
+            </div>
+
+            <div class="card" data-categoria="celulares">
+                <img src="img/celular.jpg">
+                <h3>Smartphone X</h3>
+                <p>High performance mobile device.</p>
+                <span class="precio">$500 USD</span>
+                <button class="button_card">Buy now</button>
+            </div>
+
+            <div class="card" data-categoria="celulares">
+                <img src="img/celular.jpg">
+                <h3>Smartphone Y</h3>
+                <p>Affordable and powerful.</p>
+                <span class="precio">$300 USD</span>
+                <button class="button_card">Buy now</button>
+            </div>
+
+            <div class="card" data-categoria="laptops">
+                <img src="img/laptop.jpg">
+                <h3>Laptop Pro</h3>
+                <p>Perfect for development.</p>
+                <span class="precio">$900 USD</span>
+                <button class="button_card">Buy now</button>
+            </div>
+
+            <div class="card" data-categoria="laptops">
+                <img src="img/laptop.jpg">
+                <h3>Laptop Basic</h3>
+                <p>Ideal for everyday tasks.</p>
+                <span class="precio">$600 USD</span>
+                <button class="button_card">Buy now</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3>Contacto</h3>
+        <p>© 2026 Mi Tienda</p>
+    </footer>
+
+    <script src="filtros.js"></script>
+</body>
+
+</html>

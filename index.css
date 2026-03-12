@@ -59,6 +59,9 @@ body {
 .footer {
     grid-area: footer;
     background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -67,7 +70,9 @@ body {
     .grid-container {
         grid-template:
             " . header" 100px
-            "navbar navbar" 50px "aside main" auto "footer footer" 50px / 300px auto;
+            "navbar navbar" 50px 
+            "aside main" auto 
+            "footer footer" 50px / 300px auto;
     }
 }
 
@@ -75,7 +80,8 @@ body {
     .grid-container {
         grid-template:
             "header header header" 100px
-            "aside main navbar" auto "footer footer footer" 50px / 300px auto;
+            "aside main navbar" auto 
+            "footer footer footer" 50px / 300px auto;
     }
 }
 
