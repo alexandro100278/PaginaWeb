@@ -1,0 +1,140 @@
+* {
+    box-sizing: border_box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+@media (min-width:600px) {
+    .grid-container {
+        grid-template:
+            "header" 100px
+            "main" auto 
+            "footer" 50px / 300px auto;
+    }
+}
+
+@media (min-width:1024px) {
+    .grid-container {
+        grid-template:
+            "header header" 100px
+            "main main" auto 
+            "footer footer" 50px / 300px auto;
+    }
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(172, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(226, 231, 234);
+    color: black;
+    padding: 10px 20px;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b9dda;
+}
+
+.redes {
+    margin: 10px;
+}
+
+.redes a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.precio {
+    display: block;
+    font-size: 22px;
+    color: #007bff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.button_card {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
