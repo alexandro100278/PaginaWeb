@@ -59,6 +59,6 @@ Aprendimos a usar rebase interactivo, reflog y la importancia de mantener un his
 - Captura del historial limpio con git log --oneline --graph
 ![Historial git](capturas/Historial.jpeg)
 - Captura del filtro funcionando en el navegador
-[filtro funcionando](capturas/Filtro.jpeg)
+![filtro funcionando](capturas/Filtro.jpeg)
 - Captura del historial con commits basura antes del rebase
-[Conflicto resuelto](capturas/Conflicto.jpeg)
+![Conflicto resuelto](capturas/Conflicto.jpeg)
