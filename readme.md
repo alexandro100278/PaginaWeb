@@ -1,9 +1,8 @@
 # Bitácora de Aprendizaje – TechStore
 
 ## Equipo
-- Brayan - JavaScript (lógica de filtrado)
-- Integrante 2 - HTML (estructura DOM)
-- Integrante 3 - CSS (estilos y diseño)
+- Brayan Acosta - JavaScript (lógica de filtrado)
+- Cristal quirino - HTML (estructura DOM)
 
 ## Planificación Inicial
 Se decidió trabajar utilizando una rama feature llamada "feature/filtro-productos" para aislar el desarrollo de la nueva funcionalidad.
